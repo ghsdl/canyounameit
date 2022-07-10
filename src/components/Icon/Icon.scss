@@ -7,4 +7,13 @@
   &--lightBlue {
     color: lighten($color-secondary, 30%);
   }
+  &__twitter:hover {
+    color: $color-twitter;
+  }
+  &__linkedin:hover {
+    color: $color-linkedin;
+  }
+  &__github:hover {
+    color: $color-github;
+  }
 }

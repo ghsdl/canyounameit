@@ -1,0 +1,25 @@
+@import '../../styles/styles.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  color: $color-secondary;
+  background-color: $color-white;
+  &__social {
+    display: flex;
+    li {
+      transition: transform 0.4s;
+    }
+    li:hover {
+      transform: scale(1.4);
+      transition: transform 0.4s;
+    }
+  }
+  &__logo {
+    font-size: 1.7rem;
+    margin: 0 1.5rem 1rem 0;
+  }
+}

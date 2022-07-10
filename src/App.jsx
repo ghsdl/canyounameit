@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Header from './components/Header/Header';
+import Layout from './components/Layout/Layout';
 import SearchBar from './components/SearchBar/SearchBar';
 import Results from './components/Results/Results';
 import names from './conf/names.js';
@@ -11,16 +11,17 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Header headerMinimize={headerMinimize} />
-      <SearchBar
-        input={search}
-        onChange={(search) => {
-          setSearch(search);
-          setMadeUpNames(search ? names(search) : []);
-          setHeaderMinimize(search.length);
-        }}
-      />
-      <Results madeUpNames={madeUpNames} />
+      <Layout headerMinimize={headerMinimize}>
+        <SearchBar
+          input={search}
+          onChange={(search) => {
+            setSearch(search);
+            setMadeUpNames(search ? names(search) : []);
+            setHeaderMinimize(search.length);
+          }}
+        />
+        <Results madeUpNames={madeUpNames} />
+      </Layout>
     </div>
   );
 };
