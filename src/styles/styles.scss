@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
 
 * {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 $color-primary: #f50057;
-$color-secondary: #3F3D56;
+$color-secondary: #3f3d56;
+
+$color-white: #fbfefb;
+
+$box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;

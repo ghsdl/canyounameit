@@ -1,0 +1,12 @@
+@import '../../styles/styles.scss';
+
+.paragraph {
+  display: flex;
+  align-items: center;
+  &--blue {
+    color: $color-secondary;
+  }
+  &--lightBlue {
+    color: lighten($color-secondary, 30%);
+  }
+}

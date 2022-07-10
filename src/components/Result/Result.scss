@@ -1,0 +1,34 @@
+@import '../../styles/styles.scss';
+
+.result {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem;
+  border-top: 3px solid $color-primary;
+  width: 300px;
+  padding: 2rem;
+  background-color: $color-white;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: $box-shadow;
+  }
+  &__name {
+    font-size: 1.1rem;
+  }
+  &__availibility {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    font-size: 0.7rem;
+    &--text {
+      letter-spacing: 1px;
+    }
+    &--icon {
+      margin: 0 0 0 0.4rem;
+      font-size: 1.2rem;
+    }
+  }
+}
