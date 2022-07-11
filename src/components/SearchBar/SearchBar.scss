@@ -12,14 +12,12 @@
   &--big {
     margin: 3rem 0 3rem 0;
   }
-  &__input {
-    width: 600px;
-  }
 }
 
 .btANOF {
   border: none !important;
   background-color: $color-white;
+  width: 600px;
   &::placeholder {
     color: $color-secondary;
   }

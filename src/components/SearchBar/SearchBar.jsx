@@ -10,9 +10,7 @@ const SearchBar = ({ input, onChange, headerMinimize }) => {
         <Input
           type='search'
           className={
-            headerMinimize
-              ? 'search__input search--small'
-              : 'search__input search--big'
+            headerMinimize ? 'search search--small' : 'search search--big'
           }
           style={styles}
           placeholder='Type your keywords'
