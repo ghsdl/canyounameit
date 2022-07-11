@@ -5,15 +5,17 @@ import './Header.scss';
 const Header = ({ headerMinimize }) => {
   return (
     <header className='header'>
-      <img
-        className={
-          headerMinimize
-            ? 'header__logo header__logo--small'
-            : 'header__logo header__logo--big'
-        }
-        src={HEADER_LOGO}
-        alt='logo'
-      />
+      <a href='/' alt='home'>
+        <img
+          className={
+            headerMinimize
+              ? 'header__logo header__logo--small'
+              : 'header__logo header__logo--big'
+          }
+          src={HEADER_LOGO}
+          alt='logo'
+        />
+      </a>
       <h1
         className={
           headerMinimize

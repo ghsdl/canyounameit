@@ -14,14 +14,16 @@
   }
   &__button {
     margin: 0 0 2.2rem 0;
-    box-shadow: $box-shadow;
-    background-color: $color-primary;
-    border: none;
-    &:hover {
-      background-color: darken($color-primary, 5%);
-    }
   }
   &__icon {
     margin: 0 0 0 1rem;
+  }
+}
+
+.bTTniw {
+  background-color: $color-primary !important;
+  border: none !important;
+  &:hover {
+    background-color: darken($color-primary, 5%) !important;
   }
 }
