@@ -15,10 +15,13 @@
   &__button {
     margin: 0 0 2.2rem 0;
     box-shadow: $box-shadow;
+    background-color: $color-primary;
+    border: none;
+    &:hover {
+      background-color: darken($color-primary, 5%);
+    }
   }
   &__icon {
-    font-size: 1.2rem;
-    font-weight: 700;
     margin: 0 0 0 1rem;
   }
 }
