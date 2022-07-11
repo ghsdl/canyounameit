@@ -9,7 +9,7 @@ const Header = ({ headerMinimize }) => {
         className={
           headerMinimize
             ? 'header__logo header__logo--small'
-            : ' header__logo header__logo--big'
+            : 'header__logo header__logo--big'
         }
         src={HEADER_LOGO}
         alt='logo'

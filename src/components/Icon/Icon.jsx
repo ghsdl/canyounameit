@@ -4,6 +4,8 @@ import { TbZoomCheck } from 'react-icons/tb';
 import { RiTwitterLine } from 'react-icons/ri';
 import { RiLinkedinBoxLine } from 'react-icons/ri';
 import { RiGithubLine } from 'react-icons/ri';
+import { FaAngleDown } from 'react-icons/fa';
+import { BiSearchAlt } from 'react-icons/bi';
 
 const Icon = ({ icon, onClick, className }) => {
   return (
@@ -16,6 +18,10 @@ const Icon = ({ icon, onClick, className }) => {
         <RiLinkedinBoxLine />
       ) : icon === 'GITHUB' ? (
         <RiGithubLine />
+      ) : icon === 'ARROW_DOWN' ? (
+        <FaAngleDown />
+      ) : icon === 'SEARCH' ? (
+        <BiSearchAlt />
       ) : null}
     </div>
   );

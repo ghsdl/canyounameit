@@ -19,6 +19,7 @@ const App = () => {
             setMadeUpNames(search ? names(search) : []);
             setHeaderMinimize(search.length);
           }}
+          headerMinimize={headerMinimize}
         />
         <Results madeUpNames={madeUpNames} />
       </Layout>
