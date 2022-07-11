@@ -17,7 +17,7 @@
 .btANOF {
   border: none !important;
   background-color: $color-white;
-  width: 600px;
+  width: 600px !important;
   &::placeholder {
     color: $color-secondary;
   }
