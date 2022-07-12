@@ -21,7 +21,7 @@ const App = () => {
           }}
           headerMinimize={headerMinimize}
         />
-        <Results madeUpNames={madeUpNames} />
+        <Results madeUpNames={madeUpNames} search={search} />
       </Layout>
     </div>
   );
