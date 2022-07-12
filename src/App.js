@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import Layout from './components/Layout/Layout';
-import SearchBar from './components/SearchBar/SearchBar';
-import Results from './components/Results/Results';
+import { Layout, SearchBar, Results } from './components';
 import names from './conf/names.js';
 
 const App = () => {
