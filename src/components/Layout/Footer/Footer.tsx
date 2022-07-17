@@ -1,6 +1,5 @@
-import React from 'react';
-import Icon from '../Icon/Icon';
-import Paragraph from '../Paragraph/Paragraph';
+import Icon from '../../factory/Icon/Icon';
+import Paragraph from '../../factory/Paragraph/Paragraph';
 import './Footer.scss';
 
 const Footer = () => {
@@ -12,18 +11,12 @@ const Footer = () => {
             href='https://twitter.com/nowthisiscoding'
             target='_blank'
             rel='noreferrer'
-            alt='Twitter'
           >
             <Icon icon='TWITTER' className='icon__twitter' />
           </a>
         </li>
         <li className='footer__logo'>
-          <a
-            href='https://github.com/ghsdl'
-            target='_blank'
-            rel='noreferrer'
-            alt='GitHub'
-          >
+          <a href='https://github.com/ghsdl' target='_blank' rel='noreferrer'>
             <Icon icon='GITHUB' className='icon__github' />
           </a>
         </li>
@@ -32,7 +25,6 @@ const Footer = () => {
             href='https://www.linkedin.com/in/maeva-ghsdl/'
             target='_blank'
             rel='noreferrer'
-            alt='LinkedIn'
           >
             <Icon icon='LINKEDIN' className='icon__linkedin' />
           </a>

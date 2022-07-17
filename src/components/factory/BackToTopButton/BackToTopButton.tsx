@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Icon from '../Icon/Icon';
 import './BackToTopButton.scss';
 
 const BackToTopButton = () => {
-  const [displayBackToTopButton, setDisplayBackToTopButton] = useState(false);
+  const [visible, setVisible] = useState<boolean>(false);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 400) {
-        setDisplayBackToTopButton(true);
+        setVisible(true);
       } else {
-        setDisplayBackToTopButton(false);
+        setVisible(false);
       }
     });
   }, []);
@@ -24,7 +24,7 @@ const BackToTopButton = () => {
 
   return (
     <div className='backToTopButton'>
-      {displayBackToTopButton && (
+      {visible && (
         <Icon
           icon='ARROW_UP'
           className='backToTopButton__icon backToTopButton__position'

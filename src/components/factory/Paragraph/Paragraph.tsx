@@ -1,7 +1,7 @@
-import React from 'react';
 import './Paragraph.scss';
+import { IParagraphProps } from '../../interfaces';
 
-const Paragraph = ({ label, className }) => {
+const Paragraph = ({ label, className }: IParagraphProps) => {
   return <p className={`paragraph ${className} `}>{label}</p>;
 };
 

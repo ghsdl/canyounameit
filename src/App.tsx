@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Layout, SearchBar, Results } from './components';
 import names from './conf/names.js';
 
 const App = () => {
-  const [search, setSearch] = useState('');
-  const [headerMinimize, setHeaderMinimize] = useState(false);
-  const [madeUpNames, setMadeUpNames] = useState([]);
+  const [search, setSearch] = useState<string>('');
+  const [headerMinimize, setHeaderMinimize] = useState<boolean>(false);
+  const [madeUpNames, setMadeUpNames] = useState<string[]>([]);
 
   return (
     <div className='App'>
@@ -15,7 +15,7 @@ const App = () => {
           onChange={(search) => {
             setSearch(search);
             setMadeUpNames(search ? names(search) : []);
-            setHeaderMinimize(search.length);
+            setHeaderMinimize(search.length > 0);
           }}
           headerMinimize={headerMinimize}
         />

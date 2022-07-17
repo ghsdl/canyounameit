@@ -1,13 +1,13 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from 'react-rainbow-components';
 import './Results.scss';
-import Icon from '../Icon/Icon';
-import Result from '../Result/Result';
+import Icon from '../../factory/Icon/Icon';
+import Result from '../../factory/Result/Result';
+import { IResultsProps } from '../../interfaces';
 
-const Results = ({ madeUpNames, search }) => {
-  const madeUpNamesPerRow = 6;
-  const [next, setNext] = useState(madeUpNamesPerRow);
+const Results = ({ madeUpNames, search }: IResultsProps) => {
+  const madeUpNamesPerRow: number = 6;
+  const [next, setNext] = useState<number>(madeUpNamesPerRow);
 
   useEffect(() => {
     if (search.length === 0) {

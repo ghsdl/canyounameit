@@ -1,10 +1,10 @@
-import React from 'react';
 import './Result.scss';
 import Paragraph from '../Paragraph/Paragraph';
 import Icon from '../Icon/Icon';
+import { IResultProps } from '../../interfaces';
 
-const Result = ({ madeUpName }) => {
-  const domainCheckUrl = `https://fr.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=`;
+const Result = ({ madeUpName }: IResultProps) => {
+  const domainCheckUrl: string = `https://fr.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=`;
   return (
     <a href={`${domainCheckUrl}${madeUpName}`} target='_blank' rel='noreferrer'>
       <div className='result'>

@@ -1,11 +1,11 @@
-import React from 'react';
 import './Icon.scss';
+import { IIconProps } from '../../interfaces';
 import { TbZoomCheck } from 'react-icons/tb';
 import { RiTwitterLine, RiGithubLine, RiLinkedinBoxLine } from 'react-icons/ri';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 import { BiSearchAlt } from 'react-icons/bi';
 
-const Icon = ({ icon, onClick, className }) => {
+const Icon = ({ icon, onClick, className }: IIconProps) => {
   return (
     <div className={`icon ${className}`} onClick={onClick}>
       {icon === 'CHECK' ? (

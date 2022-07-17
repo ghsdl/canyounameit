@@ -1,11 +1,11 @@
-import React from 'react';
-import HEADER_LOGO from '../../assets/images/HEADER_LOGO.svg';
 import './Header.scss';
+import { IHeaderProps } from '../../interfaces';
+import HEADER_LOGO from '../../../assets/images/HEADER_LOGO.svg';
 
-const Header = ({ headerMinimize }) => {
+const Header = ({ headerMinimize }: IHeaderProps) => {
   return (
     <header className='header'>
-      <a href='/' alt='home'>
+      <a href='/'>
         <img
           className={
             headerMinimize

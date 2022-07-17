@@ -1,9 +1,9 @@
-import React from 'react';
 import { Input } from 'react-rainbow-components';
-import Icon from '../Icon/Icon';
+import Icon from '../../factory/Icon/Icon';
 import styles from './SearchBar.scss';
+import { ISearchBarProps } from '../../interfaces';
 
-const SearchBar = ({ input, onChange, headerMinimize }) => {
+const SearchBar = ({ input, onChange, headerMinimize }: ISearchBarProps) => {
   return (
     <div className='search'>
       <div className='rainbow-align-content_center rainbow-p-vertical_x-large rainbow-flex_wrap'>
