@@ -29,14 +29,12 @@
     }
   }
   &__title {
-    font-family: 'Lobster Two', cursive;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
     color: $color-primary;
-    border-radius: 50%;
     transition: font-size 1s ease-in-out;
     &--big {
-      font-size: 4rem;
+      font-size: 3rem;
       @media screen and (max-width: 768px) {
         font-size: 2rem;
       }
