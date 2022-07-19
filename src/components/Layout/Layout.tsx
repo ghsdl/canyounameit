@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import BackToTopButton from '../factory/BackToTopButton/BackToTopButton';
@@ -7,10 +6,10 @@ import { ILayoutProps } from '../interfaces';
 
 const Layout = ({ headerMinimize, children }: ILayoutProps) => {
   return (
-    <div className='Layout'>
+    <div className='layout'>
       <BackToTopButton />
       <Header headerMinimize={headerMinimize} />
-      <div className='Layout__content'>{children}</div>
+      <div className='layout__content'>{children}</div>
       <Footer />
     </div>
   );
