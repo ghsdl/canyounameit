@@ -7,7 +7,7 @@ const BackToTopButton = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 400) {
+      if (window.scrollY > 300) {
         setVisible(true);
       } else {
         setVisible(false);
@@ -15,20 +15,18 @@ const BackToTopButton = () => {
     });
   }, []);
 
-  const backToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
   return (
     <div className='backToTopButton'>
       {visible && (
         <Icon
           icon='ARROW_UP'
           className='backToTopButton__icon backToTopButton__position'
-          onClick={backToTop}
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            });
+          }}
         />
       )}
     </div>

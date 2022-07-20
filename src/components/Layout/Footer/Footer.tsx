@@ -1,10 +1,15 @@
+import { useContext } from 'react';
 import Icon from '../../factory/Icon/Icon';
+import { LightModeContext } from '../../../context/LightMode';
 import Paragraph from '../../factory/Paragraph/Paragraph';
 import './Footer.scss';
 
 const Footer = () => {
+  const { lightMode } = useContext(LightModeContext);
   return (
-    <footer className='footer'>
+    <footer
+      className={lightMode ? 'footer footer--light' : 'footer footer--dark'}
+    >
       <ul className='footer__social'>
         <li className='footer__logo'>
           <a

@@ -32,3 +32,12 @@ export interface IResultsProps {
   madeUpNames: string[];
   search: string;
 }
+
+export interface IThemeContext {
+  lightMode: boolean;
+  toggleLightMode: () => void;
+}
+
+export interface ILightModeProviderProps {
+  children: React.ReactNode;
+}

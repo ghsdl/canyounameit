@@ -1,0 +1,22 @@
+@import '../../../styles/styles.scss';
+
+.lightSwitchButton {
+  position: relative;
+  &__icon {
+    color: lighten($color-secondary, 30%);
+    font-size: 2.5rem;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  &__position {
+    position: fixed;
+    top: 70px;
+    right: 70px;
+    @media screen and (max-width: 768px) {
+      top: 30px;
+      right: 30px;
+    }
+  }
+}

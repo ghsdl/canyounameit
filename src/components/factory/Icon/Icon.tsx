@@ -4,6 +4,8 @@ import { TbZoomCheck } from 'react-icons/tb';
 import { RiTwitterLine, RiGithubLine, RiLinkedinBoxLine } from 'react-icons/ri';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 import { BiSearchAlt } from 'react-icons/bi';
+import { GiMoonBats } from 'react-icons/gi';
+import { WiDayLightWind } from 'react-icons/wi';
 
 const Icon = ({ icon, onClick, className }: IIconProps) => {
   return (
@@ -22,6 +24,10 @@ const Icon = ({ icon, onClick, className }: IIconProps) => {
         <BiSearchAlt />
       ) : icon === 'ARROW_UP' ? (
         <FaAngleUp />
+      ) : icon === 'MOON' ? (
+        <GiMoonBats />
+      ) : icon === 'SUN' ? (
+        <WiDayLightWind />
       ) : null}
     </div>
   );

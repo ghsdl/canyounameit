@@ -6,8 +6,14 @@
   align-items: center;
   justify-content: center;
   height: 7rem;
-  color: $color-secondary;
-  background-color: $color-white;
+  &--dark {
+    color: $color-secondary;
+    background-color: $color-white;
+  }
+  &--light {
+    color: $color-white;
+    background-color: $color-secondary;
+  }
   &__social {
     display: flex;
     li {
@@ -20,7 +26,7 @@
   }
   &__logo {
     font-size: 1.7rem;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0rem 1rem 1rem 1rem;
   }
   &__copyright {
     @media screen and (max-width: 768px) {
