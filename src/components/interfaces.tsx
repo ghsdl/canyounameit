@@ -33,6 +33,10 @@ export interface IResultsProps {
   search: string;
 }
 
+export interface ILoadMoreButtonProps {
+  onClick: () => void;
+}
+
 export interface IThemeContext {
   lightMode: boolean;
   toggleLightMode: () => void;
