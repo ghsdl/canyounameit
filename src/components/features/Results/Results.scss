@@ -12,18 +12,4 @@
     align-items: center;
     justify-content: center;
   }
-  &__button {
-    margin: 1rem 0 2.2rem 0;
-  }
-  &__icon {
-    margin: 0 0 0 1rem;
-  }
-}
-
-.bTTniw {
-  background-color: $color-primary !important;
-  border: none !important;
-  &:hover {
-    background-color: darken($color-primary, 5%) !important;
-  }
 }

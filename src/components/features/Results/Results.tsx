@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Button } from 'react-rainbow-components';
-import './Results.scss';
-import Icon from '../../factory/Icon/Icon';
+import LoadMoreButton from '../../factory/LoadMoreButton/LoadMoreButton';
 import Result from '../../factory/Result/Result';
 import { IResultsProps } from '../../interfaces';
+import './Results.scss';
 
 const Results = ({ madeUpNames, search }: IResultsProps) => {
   const madeUpNamesPerRow: number = 6;
@@ -23,15 +22,7 @@ const Results = ({ madeUpNames, search }: IResultsProps) => {
         ))}
       </div>
       {next < madeUpNames.length && (
-        <Button
-          variant='brand'
-          className='results__button'
-          size='medium'
-          onClick={() => setNext(next + madeUpNamesPerRow)}
-        >
-          Load more
-          <Icon icon='ARROW_DOWN' className='results__icon' />
-        </Button>
+        <LoadMoreButton onClick={() => setNext(next + madeUpNamesPerRow)} />
       )}
     </div>
   );
