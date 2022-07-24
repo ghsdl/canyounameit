@@ -1,6 +1,9 @@
 import './Header.scss';
-import { IHeaderProps } from '../../interfaces';
 import HEADER_LOGO from '../../../assets/images/HEADER_LOGO.svg';
+
+interface IHeaderProps {
+  headerMinimize: boolean;
+}
 
 const Header = ({ headerMinimize }: IHeaderProps) => {
   return (

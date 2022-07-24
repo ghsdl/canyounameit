@@ -1,16 +1,21 @@
 import { createContext, useState } from 'react';
-import {
-  IThemeContext,
-  ILightModeProviderProps,
-} from '../components/interfaces';
 
-const LightModeContext = createContext<IThemeContext>({
+interface ILightModeContext {
+  lightMode: boolean;
+  toggleLightMode: () => void;
+}
+
+interface ILightModeProviderProps {
+  children: React.ReactNode;
+}
+
+const LightModeContext = createContext<ILightModeContext>({
   lightMode: false,
   toggleLightMode: () => {},
 });
 
 const LightModeProvider = ({ children }: ILightModeProviderProps) => {
-  const [lightMode, setLightMode] = useState(false);
+  const [lightMode, setLightMode] = useState<boolean>(false);
 
   const toggleLightMode = () => {
     setLightMode(!lightMode);

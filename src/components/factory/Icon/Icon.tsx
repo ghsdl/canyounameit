@@ -1,5 +1,10 @@
 import './Icon.scss';
-import { IIconProps } from '../../interfaces';
+
+interface IIconProps {
+  icon: React.ReactNode;
+  onClick?: () => void;
+  className?: string;
+}
 
 const Icon = ({ icon, onClick, className }: IIconProps) => {
   return (

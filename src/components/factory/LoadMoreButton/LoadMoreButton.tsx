@@ -2,7 +2,10 @@ import { Button } from 'react-rainbow-components';
 import Paragraph from '../Paragraph/Paragraph';
 import IconArrowDown from '../Icon/IconArrowDown/IconArrowDown';
 import './LoadMoreButton.scss';
-import { ILoadMoreButtonProps } from '../../interfaces';
+
+interface ILoadMoreButtonProps {
+  onClick: () => void;
+}
 
 const LoadMoreButton = ({ onClick }: ILoadMoreButtonProps) => {
   return (

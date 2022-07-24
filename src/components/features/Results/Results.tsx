@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react';
 import LoadMoreButton from '../../factory/LoadMoreButton/LoadMoreButton';
 import Result from '../../factory/Result/Result';
-import { IResultsProps } from '../../interfaces';
 import './Results.scss';
+
+interface IResultsProps {
+  madeUpNames: string[];
+  search: string;
+}
 
 const Results = ({ madeUpNames, search }: IResultsProps) => {
   const madeUpNamesPerRow: number = 6;

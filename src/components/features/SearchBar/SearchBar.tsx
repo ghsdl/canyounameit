@@ -1,7 +1,12 @@
 import { Input } from 'react-rainbow-components';
 import IconSearch from '../../factory/Icon/IconSearch/IconSearch';
 import styles from './SearchBar.scss';
-import { ISearchBarProps } from '../../interfaces';
+
+interface ISearchBarProps {
+  input: string;
+  onChange: (search: string) => void;
+  headerMinimize: boolean;
+}
 
 const SearchBar = ({ input, onChange, headerMinimize }: ISearchBarProps) => {
   return (

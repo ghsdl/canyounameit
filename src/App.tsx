@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { LightModeProvider } from './context/LightMode';
-import { Layout, SearchBar, Results } from './components';
+import Layout from './components/layout/Layout';
+import SearchBar from './components/features/SearchBar/SearchBar';
+import Results from './components/features/Results/Results';
 import names from './conf/names.js';
 
 const App = () => {

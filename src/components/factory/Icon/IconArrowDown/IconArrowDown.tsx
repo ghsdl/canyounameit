@@ -1,6 +1,9 @@
 import Icon from '../Icon';
-import { IIconArrowDownProps } from '../../../interfaces';
 import { FaAngleDown } from 'react-icons/fa';
+
+interface IIconArrowDownProps {
+  className?: string;
+}
 
 const IconArrowDown = ({ className }: IIconArrowDownProps) => {
   return <Icon icon={<FaAngleDown />} className={className} />;

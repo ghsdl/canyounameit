@@ -1,7 +1,10 @@
 import './Result.scss';
 import Paragraph from '../Paragraph/Paragraph';
 import IconCheck from '../Icon/IconCheck/IconCheck';
-import { IResultProps } from '../../interfaces';
+
+interface IResultProps {
+  madeUpName: string;
+}
 
 const Result = ({ madeUpName }: IResultProps) => {
   const domainCheckUrl: string = `https://fr.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=`;

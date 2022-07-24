@@ -5,7 +5,11 @@ import Footer from './Footer/Footer';
 import BackToTopButton from '../factory/BackToTopButton/BackToTopButton';
 import LightSwitchButton from '../factory/LightSwitchButton/LightSwitchButton';
 import './Layout.scss';
-import { ILayoutProps } from '../interfaces';
+
+interface ILayoutProps {
+  headerMinimize: boolean;
+  children: React.ReactNode;
+}
 
 const Layout = ({ headerMinimize, children }: ILayoutProps) => {
   const { lightMode } = useContext(LightModeContext);

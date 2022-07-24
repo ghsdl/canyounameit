@@ -1,6 +1,10 @@
 import Icon from '../Icon';
-import { IIconSunProps } from '../../../interfaces';
 import { WiDayLightWind } from 'react-icons/wi';
+
+interface IIconSunProps {
+  onClick?: () => void;
+  className?: string;
+}
 
 const IconSun = ({ onClick, className }: IIconSunProps) => {
   return (
