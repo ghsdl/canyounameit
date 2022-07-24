@@ -1,8 +1,8 @@
 @import '../../../styles/styles.scss';
 
 .icon {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   &--lightBlue {
     color: lighten($color-secondary, 30%);

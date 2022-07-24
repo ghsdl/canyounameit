@@ -1,40 +1,40 @@
 @import '../../../styles/styles.scss';
 
 .result {
+  background-color: $color-white;
+  border-top: 4px solid $color-primary;
+  border-radius: 0.6rem;
+  box-shadow: $box-shadow;
   display: flex;
   flex-direction: column;
   margin: 1.5rem;
-  border-top: 4px solid $color-primary;
-  width: 275px;
   padding: 2rem;
-  background-color: $color-white;
-  border-radius: 0.6rem;
-  box-shadow: $box-shadow;
   transition: all 0.3s ease-in-out;
+  width: 275px;
   @media screen and (max-width: 768px) {
     margin: 1rem;
     padding: 1rem;
   }
   &:hover {
+    box-shadow: $box-shadow;
     transform: scale(1.15);
     transition: transform 0.3s ease-in-out;
-    box-shadow: $box-shadow;
   }
   &__name {
     font-size: 1.1rem;
   }
   &__availibility {
-    display: flex;
     align-items: center;
-    margin: 1rem 0 0 0;
+    display: flex;
     font-size: 0.7rem;
+    margin: 1rem 0 0 0;
     &--text {
-      letter-spacing: 1px;
       font-size: 0.8rem;
+      letter-spacing: 1px;
     }
     &--icon {
-      margin: 0 0 0 0.4rem;
       font-size: 1.2rem;
+      margin: 0 0 0 0.4rem;
     }
   }
 }

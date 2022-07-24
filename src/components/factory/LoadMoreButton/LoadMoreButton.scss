@@ -14,9 +14,9 @@
   border: none !important;
   transition: all 0.3s ease-in-out;
   &:hover {
-    padding: 0 2rem;
     background-color: darken($color-primary, 5%) !important;
-    transition: all 0.3s ease-in-out;
     box-shadow: $box-shadow;
+    padding: 0 2rem;
+    transition: all 0.3s ease-in-out;
   }
 }

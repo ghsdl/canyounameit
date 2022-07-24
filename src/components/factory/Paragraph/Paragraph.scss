@@ -1,8 +1,8 @@
 @import '../../../styles/styles.scss';
 
 .paragraph {
-  display: flex;
   align-items: center;
+  display: flex;
   font-size: 1rem;
   &--blue {
     color: $color-secondary;
