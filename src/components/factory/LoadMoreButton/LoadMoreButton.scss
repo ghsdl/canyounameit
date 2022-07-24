@@ -5,14 +5,17 @@
     margin: 1rem 0 2.2rem 0;
   }
   &__icon {
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 0.8rem;
   }
 }
 
 .bTTniw {
   background-color: $color-primary !important;
   border: none !important;
+  transition: all 0.3s ease-in-out;
   &:hover {
+    padding: 0 2rem;
     background-color: darken($color-primary, 5%) !important;
+    transition: padding 0.3s ease-in-out;
   }
 }
