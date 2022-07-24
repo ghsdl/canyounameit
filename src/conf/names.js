@@ -1,3 +1,3 @@
-const names = require('@rstacruz/startup-name-generator');
+import names from '@rstacruz/startup-name-generator';
 
 export default names;
