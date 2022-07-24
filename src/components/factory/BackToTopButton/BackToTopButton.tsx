@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Icon from '../Icon/Icon';
+import IconArrowUp from '../Icon/IconArrowUp/IconArrowUp';
 import './BackToTopButton.scss';
 
 const BackToTopButton = () => {
@@ -18,8 +18,7 @@ const BackToTopButton = () => {
   return (
     <div className='backToTopButton'>
       {visible && (
-        <Icon
-          icon='ARROW_UP'
+        <IconArrowUp
           className='backToTopButton__icon backToTopButton__position'
           onClick={() => {
             window.scrollTo({

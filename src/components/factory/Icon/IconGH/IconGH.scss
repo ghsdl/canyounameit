@@ -1,0 +1,9 @@
+@import '../../../../styles/styles.scss';
+
+.gh__icon {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $color-github;;
+    transition: all 0.3s ease-in-out;
+  }
+}

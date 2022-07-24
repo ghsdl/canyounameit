@@ -1,5 +1,5 @@
 import { Input } from 'react-rainbow-components';
-import Icon from '../../factory/Icon/Icon';
+import IconSearch from '../../factory/Icon/IconSearch/IconSearch';
 import styles from './SearchBar.scss';
 import { ISearchBarProps } from '../../interfaces';
 
@@ -16,7 +16,7 @@ const SearchBar = ({ input, onChange, headerMinimize }: ISearchBarProps) => {
           placeholder='Type your keywords'
           isCentered
           iconPosition='right'
-          icon={<Icon icon='SEARCH' />}
+          icon={<IconSearch />}
           value={input}
           onChange={(event) => onChange(event.target.value)}
         />

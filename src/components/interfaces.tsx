@@ -8,7 +8,30 @@ export interface IHeaderProps {
 }
 
 export interface IIconProps {
-  icon: string;
+  icon: React.ReactNode;
+  onClick?: () => void;
+  className?: string;
+}
+
+export interface IIconSunProps {
+  onClick?: () => void;
+  className?: string;
+}
+
+export interface IIconMoonProps {
+  onClick?: () => void;
+  className?: string;
+}
+
+export interface IIconCheckProps {
+  className?: string;
+}
+
+export interface IIconArrowDownProps {
+  className?: string;
+}
+
+export interface IIconArrowUpProps {
   onClick?: () => void;
   className?: string;
 }

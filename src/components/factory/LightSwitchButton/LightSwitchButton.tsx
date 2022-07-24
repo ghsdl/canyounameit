@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect } from 'react';
 import { LightModeContext } from '../../../context/LightMode';
-import Icon from '../Icon/Icon';
+import IconMoon from '../Icon/IconMoon/IconMoon';
+import IconSun from '../Icon/IconSun/IconSun';
 import './LightSwitchButton.scss';
 
 const LightSwitchButton = () => {
@@ -19,13 +20,18 @@ const LightSwitchButton = () => {
 
   return (
     <div className='lightSwitchButton'>
-      {visible && (
-        <Icon
-          icon={lightMode ? 'MOON' : 'SUN'}
-          className='lightSwitchButton__icon lightSwitchButton__position'
-          onClick={() => toggleLightMode()}
-        />
-      )}
+      {visible &&
+        (lightMode ? (
+          <IconMoon
+            onClick={() => toggleLightMode()}
+            className='lightSwitchButton__icon lightSwitchButton__position'
+          />
+        ) : (
+          <IconSun
+            onClick={() => toggleLightMode()}
+            className='lightSwitchButton__icon lightSwitchButton__position'
+          />
+        ))}
     </div>
   );
 };

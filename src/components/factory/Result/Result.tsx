@@ -1,6 +1,6 @@
 import './Result.scss';
 import Paragraph from '../Paragraph/Paragraph';
-import Icon from '../Icon/Icon';
+import IconCheck from '../Icon/IconCheck/IconCheck';
 import { IResultProps } from '../../interfaces';
 
 const Result = ({ madeUpName }: IResultProps) => {
@@ -17,10 +17,7 @@ const Result = ({ madeUpName }: IResultProps) => {
           <Paragraph className='result__availibility--text paragraph--lightBlue'>
             Click to check availibility!
           </Paragraph>
-          <Icon
-            icon='CHECK'
-            className='result__availibility--icon icon--lightBlue'
-          />
+          <IconCheck className='result__availibility--icon icon--lightBlue' />
         </div>
       </div>
     </a>

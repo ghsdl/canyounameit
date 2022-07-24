@@ -1,5 +1,6 @@
 import { Button } from 'react-rainbow-components';
-import Icon from '../Icon/Icon';
+import Paragraph from '../Paragraph/Paragraph';
+import IconArrowDown from '../Icon/IconArrowDown/IconArrowDown';
 import './LoadMoreButton.scss';
 import { ILoadMoreButtonProps } from '../../interfaces';
 
@@ -12,8 +13,8 @@ const LoadMoreButton = ({ onClick }: ILoadMoreButtonProps) => {
         size='medium'
         onClick={onClick}
       >
-        Load more
-        <Icon icon='ARROW_DOWN' className='loadMoreButton__icon' />
+        <Paragraph>Load more</Paragraph>
+        <IconArrowDown className='loadMoreButton__icon' />
       </Button>
     </div>
   );

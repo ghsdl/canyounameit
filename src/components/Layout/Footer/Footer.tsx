@@ -1,5 +1,7 @@
 import { useContext } from 'react';
-import Icon from '../../factory/Icon/Icon';
+import IconTwitter from '../../factory/Icon/IconTwitter/IconTwitter';
+import IconLK from '../../factory/Icon/IconLK/IconLK';
+import IconGH from '../../factory/Icon/IconGH/IconGH';
 import { LightModeContext } from '../../../context/LightMode';
 import Paragraph from '../../factory/Paragraph/Paragraph';
 import './Footer.scss';
@@ -17,12 +19,12 @@ const Footer = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <Icon icon='TWITTER' className='icon__twitter' />
+            <IconTwitter />
           </a>
         </li>
         <li className='footer__logo'>
           <a href='https://github.com/ghsdl' target='_blank' rel='noreferrer'>
-            <Icon icon='GITHUB' className='icon__github' />
+            <IconGH />
           </a>
         </li>
         <li className='footer__logo'>
@@ -31,7 +33,7 @@ const Footer = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <Icon icon='LINKEDIN' className='icon__linkedin' />
+            <IconLK />
           </a>
         </li>
       </ul>
