@@ -12,11 +12,11 @@
 .bTTniw {
   background-color: $color-primary !important;
   border: none !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
   &:hover {
     background-color: darken($color-primary, 5%) !important;
-    box-shadow: $box-shadow;
-    padding: 0 2rem;
-    transition: all 0.3s ease-in-out;
+    box-shadow: $box-shadow !important;
+    padding: 0 2rem !important;
+    transition: all 0.3s ease-in-out !important;
   }
 }
