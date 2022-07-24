@@ -14,7 +14,7 @@ export interface IIconProps {
 }
 
 export interface IParagraphProps {
-  label: string;
+  children: React.ReactNode;
   className?: string;
 }
 

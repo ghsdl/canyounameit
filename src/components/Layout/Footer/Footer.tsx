@@ -35,10 +35,9 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <Paragraph
-        label='Handcrafted with ♥ from my sofa, Maeva Ghsdl - © 2022'
-        className='footer__copyright paragraph--lightBlue'
-      />
+      <Paragraph className='footer__copyright paragraph--lightBlue'>
+        Handcrafted with ♥ from my sofa, Maeva Ghsdl - © 2022
+      </Paragraph>
     </footer>
   );
 };

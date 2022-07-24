@@ -9,16 +9,14 @@ const Result = ({ madeUpName }: IResultProps) => {
     <a href={`${domainCheckUrl}${madeUpName}`} target='_blank' rel='noreferrer'>
       <div className='result'>
         <div>
-          <Paragraph
-            className='result__name paragraph--blue'
-            label={madeUpName}
-          />
+          <Paragraph className='result__name paragraph--blue'>
+            {madeUpName}
+          </Paragraph>
         </div>
         <div className='result__availibility'>
-          <Paragraph
-            label='Click to check availibility!'
-            className='result__availibility--text paragraph--lightBlue'
-          />
+          <Paragraph className='result__availibility--text paragraph--lightBlue'>
+            Click to check availibility!
+          </Paragraph>
           <Icon
             icon='CHECK'
             className='result__availibility--icon icon--lightBlue'
