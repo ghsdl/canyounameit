@@ -1,0 +1,13 @@
+@import '../../../styles/styles.scss';
+
+.button {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  cursor: pointer;
+  height: 2rem;
+  min-width: 100px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: darken($color-primary, 5%);
+  }
+}
