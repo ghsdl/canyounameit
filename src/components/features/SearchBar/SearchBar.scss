@@ -1,9 +1,6 @@
 @import '../../../styles/styles.scss';
 
 .search {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin: 0 0 2rem 0;
   transition: margin 1s ease-in-out;
   @media screen and (max-width: 768px) {
@@ -15,25 +12,4 @@
   &--big {
     margin: 3rem 0 3rem 0;
   }
-}
-
-.btANOF {
-  border: 1px solid $color-secondary !important;
-  width: 600px !important;
-  @media screen and (max-width: 768px) {
-    width: 300px !important;
-  }
-  &::placeholder {
-    color: $color-secondary;
-  }
-  &:focus {
-    border: 1px solid $color-secondary !important;
-    box-shadow: 0 0 0 0 $color-secondary !important;
-    outline: none !important;
-  }
-}
-
-.gXjtHS {
-  font-size: 3rem !important;
-  width: 40px !important;
 }

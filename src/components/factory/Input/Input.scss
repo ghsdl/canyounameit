@@ -1,0 +1,38 @@
+@import '../../../styles/styles.scss';
+
+.input {
+  border: 1px solid $color-secondary;
+  background-color: $color-white;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 600px;
+  display: flex;
+  height: 2.5rem;
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
+  &__icon {
+    color: $color-secondary;
+    font-size: 1.2rem;
+    margin: auto 1rem auto 0px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__input {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 100px;
+    border: none;
+    caret-color: $color-primary;
+    text-align: center;
+    &::placeholder {
+      text-align: center;
+      font-size: 1rem;
+      color: $color-secondary;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
