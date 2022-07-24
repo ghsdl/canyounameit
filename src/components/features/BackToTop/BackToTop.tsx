@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import IconArrowUp from '../Icon/IconArrowUp/IconArrowUp';
-import './BackToTopButton.scss';
+import IconArrowUp from '../../factory/Icon/IconArrowUp/IconArrowUp';
+import './BackToTop.scss';
 
-const BackToTopButton = () => {
+const BackToTop = () => {
   const [visible, setVisible] = useState<boolean>(false);
 
   useEffect(() => {
@@ -16,10 +16,10 @@ const BackToTopButton = () => {
   }, []);
 
   return (
-    <div className='backToTopButton'>
+    <div className='backToTop'>
       {visible && (
         <IconArrowUp
-          className='backToTopButton__icon backToTopButton__position'
+          className='backToTop__icon backToTop__position'
           onClick={() => {
             window.scrollTo({
               top: 0,
@@ -32,4 +32,4 @@ const BackToTopButton = () => {
   );
 };
 
-export default BackToTopButton;
+export default BackToTop;

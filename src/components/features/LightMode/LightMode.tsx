@@ -1,10 +1,10 @@
 import { useContext, useState, useEffect } from 'react';
 import { LightModeContext } from '../../../context/LightMode';
-import IconMoon from '../Icon/IconMoon/IconMoon';
-import IconSun from '../Icon/IconSun/IconSun';
-import './LightSwitchButton.scss';
+import IconMoon from '../../factory/Icon/IconMoon/IconMoon';
+import IconSun from '../../factory/Icon/IconSun/IconSun';
+import './LightMode.scss';
 
-const LightSwitchButton = () => {
+const LightMode = () => {
   const { lightMode, toggleLightMode } = useContext(LightModeContext);
   const [visible, setVisible] = useState<boolean>(true);
 
@@ -19,21 +19,21 @@ const LightSwitchButton = () => {
   }, []);
 
   return (
-    <div className='lightSwitchButton'>
+    <div className='lightMode'>
       {visible &&
         (lightMode ? (
           <IconMoon
             onClick={() => toggleLightMode()}
-            className='lightSwitchButton__icon lightSwitchButton__position'
+            className='lightMode__icon lightMode__position'
           />
         ) : (
           <IconSun
             onClick={() => toggleLightMode()}
-            className='lightSwitchButton__icon lightSwitchButton__position'
+            className='lightMode__icon lightMode__position'
           />
         ))}
     </div>
   );
 };
 
-export default LightSwitchButton;
+export default LightMode;

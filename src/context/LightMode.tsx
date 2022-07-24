@@ -5,7 +5,7 @@ interface ILightModeContext {
   toggleLightMode: () => void;
 }
 
-interface ILightModeProviderProps {
+interface ILightModeProvider {
   children: React.ReactNode;
 }
 
@@ -14,7 +14,7 @@ const LightModeContext = createContext<ILightModeContext>({
   toggleLightMode: () => {},
 });
 
-const LightModeProvider = ({ children }: ILightModeProviderProps) => {
+const LightModeProvider = ({ children }: ILightModeProvider) => {
   const [lightMode, setLightMode] = useState<boolean>(false);
 
   const toggleLightMode = () => {

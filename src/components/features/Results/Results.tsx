@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import LoadMoreButton from '../../factory/LoadMoreButton/LoadMoreButton';
+import LoadMore from '../LoadMore/LoadMore';
 import Result from '../../factory/Result/Result';
 import './Results.scss';
 
@@ -26,7 +26,7 @@ const Results = ({ madeUpNames, search }: IResultsProps) => {
         ))}
       </div>
       {next < madeUpNames.length && (
-        <LoadMoreButton onClick={() => setNext(next + madeUpNamesPerRow)} />
+        <LoadMore onClick={() => setNext(next + madeUpNamesPerRow)} />
       )}
     </div>
   );

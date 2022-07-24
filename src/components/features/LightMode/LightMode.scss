@@ -1,6 +1,6 @@
 @import '../../../styles/styles.scss';
 
-.lightSwitchButton {
+.lightMode {
   position: relative;
   &__icon {
     color: lighten($color-secondary, 30%);

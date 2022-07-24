@@ -2,8 +2,8 @@ import { useContext } from 'react';
 import { LightModeContext } from '../../context/LightMode';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import BackToTopButton from '../factory/BackToTopButton/BackToTopButton';
-import LightSwitchButton from '../factory/LightSwitchButton/LightSwitchButton';
+import BackToTop from '../features/BackToTop/BackToTop';
+import LightSwitch from '../features/LightMode/LightMode';
 import './Layout.scss';
 
 interface ILayoutProps {
@@ -15,8 +15,8 @@ const Layout = ({ headerMinimize, children }: ILayoutProps) => {
   const { lightMode } = useContext(LightModeContext);
   return (
     <div className={lightMode ? 'layout layout--light' : 'layout layout--dark'}>
-      <LightSwitchButton />
-      <BackToTopButton />
+      <LightSwitch />
+      <BackToTop />
       <Header headerMinimize={headerMinimize} />
       <div className='layout__content'>{children}</div>
       <Footer />
