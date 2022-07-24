@@ -9,15 +9,15 @@ interface ILoadMoreProps {
 
 const LoadMore = ({ onClick }: ILoadMoreProps) => {
   return (
-    <div className='loadMore'>
+    <div className="loadMore">
       <Button
-        variant='brand'
-        className='loadMore__button'
-        size='medium'
+        variant="brand"
+        className="loadMore__button"
+        size="medium"
         onClick={onClick}
       >
         <Paragraph>Load more</Paragraph>
-        <IconArrowDown className='loadMore__icon' />
+        <IconArrowDown className="loadMore__icon" />
       </Button>
     </div>
   );

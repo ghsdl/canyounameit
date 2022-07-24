@@ -11,7 +11,7 @@ const App = () => {
   const [madeUpNames, setMadeUpNames] = useState<string[]>([]);
 
   return (
-    <div className='App'>
+    <div className="App">
       <LightModeProvider>
         <Layout headerMinimize={headerMinimize}>
           <SearchBar

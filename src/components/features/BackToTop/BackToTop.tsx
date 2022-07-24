@@ -16,14 +16,14 @@ const BackToTop = () => {
   }, []);
 
   return (
-    <div className='backToTop'>
+    <div className="backToTop">
       {visible && (
         <IconArrowUp
-          className='backToTop__icon backToTop__position'
+          className="backToTop__icon backToTop__position"
           onClick={() => {
             window.scrollTo({
               top: 0,
-              behavior: 'smooth',
+              behavior: 'smooth'
             });
           }}
         />

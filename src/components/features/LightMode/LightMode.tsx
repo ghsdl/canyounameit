@@ -19,17 +19,17 @@ const LightMode = () => {
   }, []);
 
   return (
-    <div className='lightMode'>
+    <div className="lightMode">
       {visible &&
         (lightMode ? (
           <IconMoon
             onClick={() => toggleLightMode()}
-            className='lightMode__icon lightMode__position'
+            className="lightMode__icon lightMode__position"
           />
         ) : (
           <IconSun
             onClick={() => toggleLightMode()}
-            className='lightMode__icon lightMode__position'
+            className="lightMode__icon lightMode__position"
           />
         ))}
     </div>

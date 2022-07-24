@@ -9,7 +9,7 @@ interface IResultsProps {
 }
 
 const Results = ({ madeUpNames, search }: IResultsProps) => {
-  const madeUpNamesPerRow: number = 6;
+  const madeUpNamesPerRow = 6;
   const [next, setNext] = useState<number>(madeUpNamesPerRow);
 
   useEffect(() => {
@@ -19,8 +19,8 @@ const Results = ({ madeUpNames, search }: IResultsProps) => {
   }, [search]);
 
   return (
-    <div className='results'>
-      <div className='results__list'>
+    <div className="results">
+      <div className="results__list">
         {madeUpNames.slice(0, next).map((name, index) => (
           <Result key={index} madeUpName={name} />
         ))}

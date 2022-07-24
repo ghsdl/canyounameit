@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { createContext, useState } from 'react';
 
 interface ILightModeContext {
@@ -11,7 +12,7 @@ interface ILightModeProvider {
 
 const LightModeContext = createContext<ILightModeContext>({
   lightMode: false,
-  toggleLightMode: () => {},
+  toggleLightMode: () => {}
 });
 
 const LightModeProvider = ({ children }: ILightModeProvider) => {

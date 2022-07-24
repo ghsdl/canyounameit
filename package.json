@@ -13,14 +13,15 @@
   "scripts": {
     "start": "react-scripts start",
     "tsc": "tsc",
+    "prettier": "prettier --config .prettierrc 'src/**/*.tsx' --write",
+    "lint": "eslint . --ext .tsx --fix",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -40,6 +41,12 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@types/react-icons": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
     "sass": "^1.53.0",
     "typescript": "^4.7.4"
   }

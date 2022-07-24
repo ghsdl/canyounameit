@@ -7,8 +7,8 @@ interface IHeaderProps {
 
 const Header = ({ headerMinimize }: IHeaderProps) => {
   return (
-    <header className='header'>
-      <a href='/'>
+    <header className="header">
+      <a href="/">
         <img
           className={
             headerMinimize
@@ -16,7 +16,7 @@ const Header = ({ headerMinimize }: IHeaderProps) => {
               : 'header__logo header__logo--big'
           }
           src={HEADER_LOGO}
-          alt='logo'
+          alt="logo"
         />
       </a>
       <h1

@@ -12,32 +12,32 @@ const Footer = () => {
     <footer
       className={lightMode ? 'footer footer--light' : 'footer footer--dark'}
     >
-      <ul className='footer__social'>
-        <li className='footer__logo'>
+      <ul className="footer__social">
+        <li className="footer__logo">
           <a
-            href='https://twitter.com/nowthisiscoding'
-            target='_blank'
-            rel='noreferrer'
+            href="https://twitter.com/nowthisiscoding"
+            target="_blank"
+            rel="noreferrer"
           >
             <IconTwitter />
           </a>
         </li>
-        <li className='footer__logo'>
-          <a href='https://github.com/ghsdl' target='_blank' rel='noreferrer'>
+        <li className="footer__logo">
+          <a href="https://github.com/ghsdl" target="_blank" rel="noreferrer">
             <IconGH />
           </a>
         </li>
-        <li className='footer__logo'>
+        <li className="footer__logo">
           <a
-            href='https://www.linkedin.com/in/maeva-ghsdl/'
-            target='_blank'
-            rel='noreferrer'
+            href="https://www.linkedin.com/in/maeva-ghsdl/"
+            target="_blank"
+            rel="noreferrer"
           >
             <IconLK />
           </a>
         </li>
       </ul>
-      <Paragraph className='footer__copyright paragraph--lightBlue'>
+      <Paragraph className="footer__copyright paragraph--lightBlue">
         Handcrafted with ♥ from my sofa, Maeva Ghsdl - © 2022
       </Paragraph>
     </footer>

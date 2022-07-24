@@ -18,7 +18,7 @@ const Layout = ({ headerMinimize, children }: ILayoutProps) => {
       <LightSwitch />
       <BackToTop />
       <Header headerMinimize={headerMinimize} />
-      <div className='layout__content'>{children}</div>
+      <div className="layout__content">{children}</div>
       <Footer />
     </div>
   );
