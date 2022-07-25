@@ -12,17 +12,14 @@ const BackToTop = () => {
     });
   }, []);
 
+  const handleClick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
   return (
     <div className="backToTop">
       {visible && (
         <IconArrowUp
-          className="backToTop__icon backToTop__position"
-          onClick={() => {
-            window.scrollTo({
-              top: 0,
-              behavior: 'smooth'
-            });
-          }}
+          className="backToTop__icon backToTop__icon--position"
+          onClick={handleClick}
         />
       )}
     </div>

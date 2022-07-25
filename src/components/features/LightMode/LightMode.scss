@@ -6,17 +6,18 @@
     color: lighten($color-secondary, 30%);
     cursor: pointer;
     font-size: 2.5rem;
+    &--position {
+      position: fixed;
+      right: 70px;
+      top: 70px;
+
+      @media screen and (max-width: 768px) {
+        right: 30px;
+        top: 30px;
+      }
+    }
     @media screen and (max-width: 768px) {
       font-size: 2rem;
-    }
-  }
-  &__position {
-    position: fixed;
-    right: 70px;
-    top: 70px;
-    @media screen and (max-width: 768px) {
-      right: 30px;
-      top: 30px;
     }
   }
 }

@@ -21,12 +21,12 @@ const LightMode = () => {
         (lightMode ? (
           <IconMoon
             onClick={() => toggleLightMode()}
-            className="lightMode__icon lightMode__position"
+            className="lightMode__icon lightMode__icon--position"
           />
         ) : (
           <IconSun
             onClick={() => toggleLightMode()}
-            className="lightMode__icon lightMode__position"
+            className="lightMode__icon lightMode__icon--position"
           />
         ))}
     </div>

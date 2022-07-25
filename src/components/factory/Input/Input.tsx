@@ -22,7 +22,7 @@ const Input = ({
       value={value}
       placeholder={placeholder}
       onChange={onChange}
-      className="input__input"
+      className="input__field"
     />
     <IconSearch className="input__icon" />
   </div>
