@@ -3,12 +3,12 @@ import LoadMore from '../LoadMore/LoadMore';
 import Result from '../../factory/Result/Result';
 import './Results.scss';
 
-interface IResultsProps {
+interface ResultsProps {
   madeUpNames: string[];
   search: string;
 }
 
-const Results = ({ madeUpNames, search }: IResultsProps) => {
+const Results = ({ madeUpNames, search }: ResultsProps) => {
   const madeUpNamesPerRow = 6;
   const [next, setNext] = useState<number>(madeUpNamesPerRow);
 

@@ -1,11 +1,11 @@
 import Icon from '../Icon';
 import { BiSearchAlt } from 'react-icons/bi';
 
-interface IIconSearchProps {
+interface IconSearchProps {
   className?: string;
 }
 
-const IconSearch = ({ className }: IIconSearchProps) => (
+const IconSearch = ({ className }: IconSearchProps) => (
   <Icon icon={<BiSearchAlt />} className={className} />
 );
 

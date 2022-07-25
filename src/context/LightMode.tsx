@@ -1,21 +1,21 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { createContext, useState } from 'react';
 
-interface ILightModeContext {
+interface LightModeContext {
   lightMode: boolean;
   toggleLightMode: () => void;
 }
 
-interface ILightModeProvider {
+interface LightModeProvider {
   children: React.ReactNode;
 }
 
-const LightModeContext = createContext<ILightModeContext>({
+const LightModeContext = createContext<LightModeContext>({
   lightMode: false,
   toggleLightMode: () => {}
 });
 
-const LightModeProvider = ({ children }: ILightModeProvider) => {
+const LightModeProvider = ({ children }: LightModeProvider) => {
   const [lightMode, setLightMode] = useState<boolean>(false);
 
   const toggleLightMode = () => setLightMode(!lightMode);

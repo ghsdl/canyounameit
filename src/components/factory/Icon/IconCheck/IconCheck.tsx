@@ -1,11 +1,11 @@
 import Icon from '../Icon';
 import { TbZoomCheck } from 'react-icons/tb';
 
-interface IIconCheckProps {
+interface IconCheckProps {
   className?: string;
 }
 
-const IconCheck = ({ className }: IIconCheckProps) => (
+const IconCheck = ({ className }: IconCheckProps) => (
   <Icon icon={<TbZoomCheck />} className={className} />
 );
 

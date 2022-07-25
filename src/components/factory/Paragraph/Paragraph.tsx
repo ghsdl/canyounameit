@@ -1,11 +1,11 @@
 import './Paragraph.scss';
 
-interface IParagraphProps {
+interface ParagraphProps {
   children: React.ReactNode;
   className?: string;
 }
 
-const Paragraph = ({ children, className }: IParagraphProps) => (
+const Paragraph = ({ children, className }: ParagraphProps) => (
   <p className={`paragraph ${className} `}>{children}</p>
 );
 

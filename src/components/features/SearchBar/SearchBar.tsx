@@ -1,13 +1,13 @@
 import Input from '../../factory/Input/Input';
 import './SearchBar.scss';
 
-interface ISearchBarProps {
+interface SearchBarProps {
   input: string;
   onChange: (search: string) => void;
   headerMinimize: boolean;
 }
 
-const SearchBar = ({ input, onChange, headerMinimize }: ISearchBarProps) => (
+const SearchBar = ({ input, onChange, headerMinimize }: SearchBarProps) => (
   <div className="search">
     <Input
       type="search"

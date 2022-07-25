@@ -2,11 +2,11 @@ import './Result.scss';
 import Paragraph from '../Paragraph/Paragraph';
 import IconCheck from '../Icon/IconCheck/IconCheck';
 
-interface IResultProps {
+interface ResultProps {
   madeUpName: string;
 }
 
-const Result = ({ madeUpName }: IResultProps) => {
+const Result = ({ madeUpName }: ResultProps) => {
   const domainCheckUrl = `https://fr.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=`;
   return (
     <a href={`${domainCheckUrl}${madeUpName}`} target="_blank" rel="noreferrer">

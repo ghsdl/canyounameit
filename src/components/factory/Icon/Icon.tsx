@@ -1,12 +1,12 @@
 import './Icon.scss';
 
-interface IIconProps {
+interface IconProps {
   icon: React.ReactNode;
   onClick?: () => void;
   className?: string;
 }
 
-const Icon = ({ icon, onClick, className }: IIconProps) => (
+const Icon = ({ icon, onClick, className }: IconProps) => (
   <div className={`icon ${className}`} onClick={onClick}>
     {icon}
   </div>

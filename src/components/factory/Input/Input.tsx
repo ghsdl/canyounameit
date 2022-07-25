@@ -1,7 +1,7 @@
 import './Input.scss';
 import IconSearch from '../../factory/Icon/IconSearch/IconSearch';
 
-interface IInputProps {
+interface InputProps {
   type: 'search';
   value: string;
   placeholder: string;
@@ -15,7 +15,7 @@ const Input = ({
   placeholder,
   onChange,
   className
-}: IInputProps) => (
+}: InputProps) => (
   <div className={`input ${className}`}>
     <input
       type={type}

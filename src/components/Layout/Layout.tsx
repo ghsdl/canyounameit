@@ -6,12 +6,12 @@ import BackToTop from '../features/BackToTop/BackToTop';
 import LightSwitch from '../features/LightMode/LightMode';
 import './Layout.scss';
 
-interface ILayoutProps {
+interface LayoutProps {
   headerMinimize: boolean;
   children: React.ReactNode;
 }
 
-const Layout = ({ headerMinimize, children }: ILayoutProps) => {
+const Layout = ({ headerMinimize, children }: LayoutProps) => {
   const { lightMode } = useContext(LightModeContext);
   return (
     <div className={lightMode ? 'layout layout--light' : 'layout layout--dark'}>

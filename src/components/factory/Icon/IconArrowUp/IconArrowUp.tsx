@@ -1,12 +1,12 @@
 import Icon from '../Icon';
 import { FaAngleUp } from 'react-icons/fa';
 
-interface IIconArrowUpProps {
+interface IconArrowUpProps {
   onClick?: () => void;
   className?: string;
 }
 
-const IconArrowUp = ({ onClick, className }: IIconArrowUpProps) => (
+const IconArrowUp = ({ onClick, className }: IconArrowUpProps) => (
   <Icon icon={<FaAngleUp />} onClick={onClick} className={className} />
 );
 

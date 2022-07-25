@@ -1,11 +1,11 @@
 import './Header.scss';
 import HEADER_LOGO from '../../../assets/images/HEADER_LOGO.svg';
 
-interface IHeaderProps {
+interface HeaderProps {
   headerMinimize: boolean;
 }
 
-const Header = ({ headerMinimize }: IHeaderProps) => (
+const Header = ({ headerMinimize }: HeaderProps) => (
   <header className="header">
     <a href="/">
       <img
