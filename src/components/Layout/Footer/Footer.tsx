@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import IconTwitter from '../../factory/Icon/IconTwitter/IconTwitter';
 import IconLK from '../../factory/Icon/IconLK/IconLK';
 import IconGH from '../../factory/Icon/IconGH/IconGH';
-import { LightModeContext } from '../../../context/LightMode';
+import { LightModeContext } from '../../../context/LightModeContext';
 import Paragraph from '../../factory/Paragraph/Paragraph';
 import './Footer.scss';
 

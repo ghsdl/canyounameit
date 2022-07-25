@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { LightModeProvider } from './context/LightMode';
+import { LightModeProvider } from './context/LightModeProvider';
 import Layout from './components/layout/Layout';
 import SearchBar from './components/features/SearchBar/SearchBar';
 import Results from './components/features/Results/Results';

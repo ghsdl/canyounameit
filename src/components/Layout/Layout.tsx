@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { LightModeContext } from '../../context/LightMode';
+import { LightModeContext } from '../../context/LightModeContext';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import BackToTop from '../features/BackToTop/BackToTop';

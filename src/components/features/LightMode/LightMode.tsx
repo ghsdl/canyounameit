@@ -1,11 +1,11 @@
 import { useContext, useState, useEffect } from 'react';
-import { LightModeContext } from '../../../context/LightMode';
+import { LightModeContext } from '../../../context/LightModeContext';
 import IconMoon from '../../factory/Icon/IconMoon/IconMoon';
 import IconSun from '../../factory/Icon/IconSun/IconSun';
 import './LightMode.scss';
 
 const LightMode = () => {
-  const { lightMode, toggleLightMode } = useContext(LightModeContext);
+  const { lightMode, setLightMode } = useContext(LightModeContext);
   const [visible, setVisible] = useState<boolean>(true);
 
   useEffect(() => {
@@ -20,12 +20,12 @@ const LightMode = () => {
       {visible &&
         (lightMode ? (
           <IconMoon
-            onClick={() => toggleLightMode()}
+            onClick={() => setLightMode()}
             className="lightMode__icon lightMode__icon--position"
           />
         ) : (
           <IconSun
-            onClick={() => toggleLightMode()}
+            onClick={() => setLightMode()}
             className="lightMode__icon lightMode__icon--position"
           />
         ))}
