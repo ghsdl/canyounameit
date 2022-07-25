@@ -10,11 +10,8 @@ const LightMode = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.scrollY < 300) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
+      if (window.scrollY < 300) return setVisible(true);
+      return setVisible(false);
     });
   }, []);
 

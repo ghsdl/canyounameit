@@ -6,10 +6,8 @@ interface IIconSunProps {
   className?: string;
 }
 
-const IconSun = ({ onClick, className }: IIconSunProps) => {
-  return (
-    <Icon icon={<WiDayLightWind />} onClick={onClick} className={className} />
-  );
-};
+const IconSun = ({ onClick, className }: IIconSunProps) => (
+  <Icon icon={<WiDayLightWind />} onClick={onClick} className={className} />
+);
 
 export default IconSun;

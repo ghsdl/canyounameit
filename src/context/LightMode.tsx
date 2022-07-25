@@ -18,9 +18,7 @@ const LightModeContext = createContext<ILightModeContext>({
 const LightModeProvider = ({ children }: ILightModeProvider) => {
   const [lightMode, setLightMode] = useState<boolean>(false);
 
-  const toggleLightMode = () => {
-    setLightMode(!lightMode);
-  };
+  const toggleLightMode = () => setLightMode(!lightMode);
 
   return (
     <LightModeContext.Provider value={{ lightMode, toggleLightMode }}>

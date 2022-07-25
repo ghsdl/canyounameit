@@ -6,8 +6,8 @@ interface IIconMoonProps {
   className?: string;
 }
 
-const IconMoon = ({ onClick, className }: IIconMoonProps) => {
-  return <Icon icon={<GiMoonBats />} onClick={onClick} className={className} />;
-};
+const IconMoon = ({ onClick, className }: IIconMoonProps) => (
+  <Icon icon={<GiMoonBats />} onClick={onClick} className={className} />
+);
 
 export default IconMoon;

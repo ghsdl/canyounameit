@@ -5,8 +5,8 @@ interface IIconArrowDownProps {
   className?: string;
 }
 
-const IconArrowDown = ({ className }: IIconArrowDownProps) => {
-  return <Icon icon={<FaAngleDown />} className={className} />;
-};
+const IconArrowDown = ({ className }: IIconArrowDownProps) => (
+  <Icon icon={<FaAngleDown />} className={className} />
+);
 
 export default IconArrowDown;

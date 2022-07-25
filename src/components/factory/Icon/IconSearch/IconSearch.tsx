@@ -5,8 +5,8 @@ interface IIconSearchProps {
   className?: string;
 }
 
-const IconSearch = ({ className }: IIconSearchProps) => {
-  return <Icon icon={<BiSearchAlt />} className={className} />;
-};
+const IconSearch = ({ className }: IIconSearchProps) => (
+  <Icon icon={<BiSearchAlt />} className={className} />
+);
 
 export default IconSearch;

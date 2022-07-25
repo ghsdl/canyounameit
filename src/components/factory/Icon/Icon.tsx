@@ -6,12 +6,10 @@ interface IIconProps {
   className?: string;
 }
 
-const Icon = ({ icon, onClick, className }: IIconProps) => {
-  return (
-    <div className={`icon ${className}`} onClick={onClick}>
-      {icon}
-    </div>
-  );
-};
+const Icon = ({ icon, onClick, className }: IIconProps) => (
+  <div className={`icon ${className}`} onClick={onClick}>
+    {icon}
+  </div>
+);
 
 export default Icon;

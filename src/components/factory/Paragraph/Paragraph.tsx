@@ -5,8 +5,8 @@ interface IParagraphProps {
   className?: string;
 }
 
-const Paragraph = ({ children, className }: IParagraphProps) => {
-  return <p className={`paragraph ${className} `}>{children}</p>;
-};
+const Paragraph = ({ children, className }: IParagraphProps) => (
+  <p className={`paragraph ${className} `}>{children}</p>
+);
 
 export default Paragraph;

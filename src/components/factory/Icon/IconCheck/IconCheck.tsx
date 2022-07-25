@@ -5,8 +5,8 @@ interface IIconCheckProps {
   className?: string;
 }
 
-const IconCheck = ({ className }: IIconCheckProps) => {
-  return <Icon icon={<TbZoomCheck />} className={className} />;
-};
+const IconCheck = ({ className }: IIconCheckProps) => (
+  <Icon icon={<TbZoomCheck />} className={className} />
+);
 
 export default IconCheck;

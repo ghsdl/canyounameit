@@ -7,15 +7,13 @@ interface ILoadMoreProps {
   onClick: () => void;
 }
 
-const LoadMore = ({ onClick }: ILoadMoreProps) => {
-  return (
-    <div className="loadMore">
-      <Button type="button" onClick={onClick} className="loadMore__button">
-        <Paragraph>Load more</Paragraph>
-        <IconArrowDown className="loadMore__icon" />
-      </Button>
-    </div>
-  );
-};
+const LoadMore = ({ onClick }: ILoadMoreProps) => (
+  <div className="loadMore">
+    <Button type="button" onClick={onClick} className="loadMore__button">
+      <Paragraph>Load more</Paragraph>
+      <IconArrowDown className="loadMore__icon" />
+    </Button>
+  </div>
+);
 
 export default LoadMore;

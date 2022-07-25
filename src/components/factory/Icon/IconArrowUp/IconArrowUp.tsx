@@ -6,8 +6,8 @@ interface IIconArrowUpProps {
   className?: string;
 }
 
-const IconArrowUp = ({ onClick, className }: IIconArrowUpProps) => {
-  return <Icon icon={<FaAngleUp />} onClick={onClick} className={className} />;
-};
+const IconArrowUp = ({ onClick, className }: IIconArrowUpProps) => (
+  <Icon icon={<FaAngleUp />} onClick={onClick} className={className} />
+);
 
 export default IconArrowUp;

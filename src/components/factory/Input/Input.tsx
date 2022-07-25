@@ -15,19 +15,17 @@ const Input = ({
   placeholder,
   onChange,
   className
-}: IInputProps) => {
-  return (
-    <div className={`input ${className}`}>
-      <input
-        type={type}
-        value={value}
-        placeholder={placeholder}
-        onChange={onChange}
-        className="input__input"
-      />
-      <IconSearch className="input__icon" />
-    </div>
-  );
-};
+}: IInputProps) => (
+  <div className={`input ${className}`}>
+    <input
+      type={type}
+      value={value}
+      placeholder={placeholder}
+      onChange={onChange}
+      className="input__input"
+    />
+    <IconSearch className="input__icon" />
+  </div>
+);
 
 export default Input;
