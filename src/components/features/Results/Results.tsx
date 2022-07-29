@@ -13,9 +13,7 @@ const Results = ({ madeUpNames, search }: ResultsProps) => {
   const [next, setNext] = useState<number>(madeUpNamesPerRow);
 
   useEffect(() => {
-    if (search.length === 0) {
-      setNext(madeUpNamesPerRow);
-    }
+    if (search.length === 0) return setNext(madeUpNamesPerRow);
   }, [search]);
 
   return (

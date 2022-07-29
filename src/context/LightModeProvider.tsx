@@ -9,9 +9,7 @@ const LightModeProvider = ({ children }: LightModeProvider) => {
   const [lightMode, setLightMode] = useState<boolean>(false);
 
   return (
-    <LightModeContext.Provider
-      value={{ lightMode, setLightMode: () => setLightMode(!lightMode) }}
-    >
+    <LightModeContext.Provider value={{ lightMode, setLightMode }}>
       {children}
     </LightModeContext.Provider>
   );

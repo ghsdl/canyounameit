@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import IconArrowUp from '../../factory/Icon/IconArrowUp/IconArrowUp';
+import Icon from '../../factory/Icon/Icon';
+import { FaAngleUp } from 'react-icons/fa';
 import './BackToTop.scss';
 
 const BackToTop = () => {
@@ -17,9 +18,10 @@ const BackToTop = () => {
   return (
     <div className="backToTop">
       {visible && (
-        <IconArrowUp
-          className="backToTop__icon backToTop__icon--position"
+        <Icon
+          icon={<FaAngleUp />}
           onClick={handleClick}
+          className="backToTop__icon backToTop__icon--position"
         />
       )}
     </div>

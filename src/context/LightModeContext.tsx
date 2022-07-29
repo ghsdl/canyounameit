@@ -2,12 +2,12 @@ import { createContext } from 'react';
 
 interface LightModeContext {
   lightMode: boolean;
-  setLightMode: () => void;
+  setLightMode: (value: boolean) => void;
 }
 
 const LightModeContext = createContext<LightModeContext>({
   lightMode: false,
-  setLightMode: () => void 0
-} as LightModeContext);
+  setLightMode: () => null
+});
 
 export { LightModeContext };

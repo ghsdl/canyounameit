@@ -1,5 +1,6 @@
 import './Input.scss';
-import IconSearch from '../../factory/Icon/IconSearch/IconSearch';
+import Icon from '../../factory/Icon/Icon';
+import { BiSearchAlt } from 'react-icons/bi';
 
 interface InputProps {
   type: 'search';
@@ -24,7 +25,7 @@ const Input = ({
       onChange={onChange}
       className="input__field"
     />
-    <IconSearch className="input__icon" />
+    <Icon icon={<BiSearchAlt />} className="input__icon" />
   </div>
 );
 

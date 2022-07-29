@@ -1,7 +1,8 @@
 import { useContext, useState, useEffect } from 'react';
 import { LightModeContext } from '../../../context/LightModeContext';
-import IconMoon from '../../factory/Icon/IconMoon/IconMoon';
-import IconSun from '../../factory/Icon/IconSun/IconSun';
+import Icon from '../../factory/Icon/Icon';
+import { WiDayLightWind } from 'react-icons/wi';
+import { GiMoonBats } from 'react-icons/gi';
 import './LightMode.scss';
 
 const LightMode = () => {
@@ -19,13 +20,15 @@ const LightMode = () => {
     <div className="lightMode">
       {visible &&
         (lightMode ? (
-          <IconMoon
-            onClick={() => setLightMode()}
+          <Icon
+            icon={<GiMoonBats />}
+            onClick={() => setLightMode(!lightMode)}
             className="lightMode__icon lightMode__icon--position"
           />
         ) : (
-          <IconSun
-            onClick={() => setLightMode()}
+          <Icon
+            icon={<WiDayLightWind />}
+            onClick={() => setLightMode(!lightMode)}
             className="lightMode__icon lightMode__icon--position"
           />
         ))}

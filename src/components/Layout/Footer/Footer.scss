@@ -16,17 +16,34 @@
   }
   &__social {
     display: flex;
-    li {
-      transition: transform 0.4s;
+    &__logo {
+      font-size: 1.7rem;
+      margin: 0rem 1rem 1rem 1rem;
+      &--twitter {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $color-twitter;
+          transform: scale(1.5);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      &--gh {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $color-github;
+          transform: scale(1.5);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      &--lk {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $color-linkedin;
+          transform: scale(1.5);
+          transition: all 0.3s ease-in-out;
+        }
+      }
     }
-    li:hover {
-      transform: scale(1.5);
-      transition: transform 0.4s;
-    }
-  }
-  &__logo {
-    font-size: 1.7rem;
-    margin: 0rem 1rem 1rem 1rem;
   }
   &__copyright {
     @media screen and (max-width: 768px) {

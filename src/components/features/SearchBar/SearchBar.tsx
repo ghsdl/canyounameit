@@ -13,10 +13,10 @@ const SearchBar = ({ input, onChange, headerMinimize }: SearchBarProps) => (
       type="search"
       placeholder="Type your keywords"
       value={input}
-      onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-        onChange(event.target.value);
-      }}
-      className={headerMinimize ? 'search search--small' : 'search search--big'}
+      onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+        onChange(event.target.value)
+      }
+      className={`search ${headerMinimize ? 'search--small' : 'search--big'}`}
     />
   </div>
 );

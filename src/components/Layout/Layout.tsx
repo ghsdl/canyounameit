@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { LightModeContext } from '../../context/LightModeContext';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
@@ -14,7 +14,7 @@ interface LayoutProps {
 const Layout = ({ headerMinimize, children }: LayoutProps) => {
   const { lightMode } = useContext(LightModeContext);
   return (
-    <div className={lightMode ? 'layout layout--light' : 'layout layout--dark'}>
+    <div className={`layout ${lightMode ? 'layout--light' : 'layout--dark'}`}>
       <LightSwitch />
       <BackToTop />
       <Header headerMinimize={headerMinimize} />

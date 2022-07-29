@@ -1,6 +1,7 @@
 import './Result.scss';
 import Paragraph from '../Paragraph/Paragraph';
-import IconCheck from '../Icon/IconCheck/IconCheck';
+import Icon from '../Icon/Icon';
+import { TbZoomCheck } from 'react-icons/tb';
 
 interface ResultProps {
   madeUpName: string;
@@ -20,7 +21,10 @@ const Result = ({ madeUpName }: ResultProps) => {
           <Paragraph className="result__availibility--text paragraph--lightBlue">
             Click to check availibility!
           </Paragraph>
-          <IconCheck className="result__availibility--icon icon--lightBlue" />
+          <Icon
+            icon={<TbZoomCheck />}
+            className="result__availibility--icon icon--lightBlue"
+          />
         </div>
       </div>
     </a>

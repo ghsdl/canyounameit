@@ -1,39 +1,47 @@
 import { useContext } from 'react';
-import IconTwitter from '../../factory/Icon/IconTwitter/IconTwitter';
-import IconLK from '../../factory/Icon/IconLK/IconLK';
-import IconGH from '../../factory/Icon/IconGH/IconGH';
+import Icon from '../../factory/Icon/Icon';
 import { LightModeContext } from '../../../context/LightModeContext';
 import Paragraph from '../../factory/Paragraph/Paragraph';
+import { RiGithubLine, RiLinkedinBoxLine, RiTwitterLine } from 'react-icons/ri';
 import './Footer.scss';
 
 const Footer = () => {
   const { lightMode } = useContext(LightModeContext);
   return (
     <footer
-      className={lightMode ? 'footer footer--light' : 'footer footer--dark'}
+      className={`footer ${lightMode ? ' footer--light' : 'footer--dark'}`}
     >
       <ul className="footer__social">
-        <li className="footer__logo">
+        <li className="footer__social__logo">
           <a
             href="https://twitter.com/nowthisiscoding"
             target="_blank"
             rel="noreferrer"
           >
-            <IconTwitter />
+            <Icon
+              icon={<RiTwitterLine />}
+              className="footer__social__logo--twitter"
+            />
           </a>
         </li>
-        <li className="footer__logo">
+        <li className="footer__social__logo">
           <a href="https://github.com/ghsdl" target="_blank" rel="noreferrer">
-            <IconGH />
+            <Icon
+              icon={<RiGithubLine />}
+              className="footer__social__logo--gh"
+            />
           </a>
         </li>
-        <li className="footer__logo">
+        <li className="footer__social__logo">
           <a
             href="https://www.linkedin.com/in/maeva-ghsdl/"
             target="_blank"
             rel="noreferrer"
           >
-            <IconLK />
+            <Icon
+              icon={<RiLinkedinBoxLine />}
+              className="footer__social__logo--lk"
+            />
           </a>
         </li>
       </ul>

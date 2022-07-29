@@ -9,21 +9,17 @@ const Header = ({ headerMinimize }: HeaderProps) => (
   <header className="header">
     <a href="/">
       <img
-        className={
-          headerMinimize
-            ? 'header__logo header__logo--small'
-            : 'header__logo header__logo--big'
-        }
+        className={`header__logo ${
+          headerMinimize ? 'header__logo--small' : 'header__logo--big'
+        }`}
         src={HEADER_LOGO}
         alt="logo"
       />
     </a>
     <h1
-      className={
-        headerMinimize
-          ? 'header__title header__title--small'
-          : 'header__title header__title--big'
-      }
+      className={`header__title ${
+        headerMinimize ? 'header__title--small' : 'header__title--big'
+      }`}
     >
       Can you name it ?
     </h1>
